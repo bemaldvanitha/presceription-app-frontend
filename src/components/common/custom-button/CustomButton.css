@@ -1,0 +1,14 @@
+.custom-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    width: 300px;
+    cursor: pointer;
+}
+
+.custom-button-text {
+    font-family: 'Poppins', serif;
+    font-weight: bold;
+    font-size: 18px;
+}

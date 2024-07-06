@@ -1,0 +1,67 @@
+.login-screen {
+    background-image: url("/src/assets/images/background/login/login-screen-background-1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-screen-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(108, 54, 138, 0.4);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 800px;
+}
+
+.login-screen-title {
+    font-family: 'Poppins', serif;
+    font-weight: bold;
+    font-size: 34px;
+    margin: 10px 0;
+    color: #f0f0f0;
+}
+
+.login-screen-description {
+    font-family: 'Poppins', serif;
+    font-size: 16px;
+    margin: 10px 0;
+    color: #f0f0f0;
+}
+
+.login-screen-signup-navigate-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.login-screen-signup-navigate-container-text {
+    font-family: 'Poppins', serif;
+    font-size: 14px;
+    margin: 10px 0;
+    color: #f0f0f0;
+}
+
+.login-screen-signup-navigate-container-text-link {
+    font-family: 'Poppins', serif;
+    font-size: 16px;
+    margin: 10px 0;
+    text-decoration: underline;
+    cursor: pointer;
+    color: #00b8f1;
+}
+
+@media (max-width: 800px) {
+    .login-screen-container {
+        width: 90%;
+    }
+}
