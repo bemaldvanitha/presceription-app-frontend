@@ -1,6 +1,8 @@
 import { AUTH_URL } from "../configuration";
 import { apiSlice } from "./apiSlice";
 
+const getToken = () => localStorage.getItem('token');
+
 export const authApiSlice = apiSlice.injectEndpoints({
     endpoints: (builder) => ({
         login: builder.mutation({
@@ -10,9 +12,9 @@ export const authApiSlice = apiSlice.injectEndpoints({
                 body: data,
             }),
             transformResponse: (response) => {
-                const { token } = response;
-                if(token){
-                    localStorage.setItem('token', token);
+                const { jwtToken } = response;
+                if (jwtToken) {
+                    localStorage.setItem('token', jwtToken);
                 }
                 return response;
             }
@@ -22,20 +24,33 @@ export const authApiSlice = apiSlice.injectEndpoints({
                 url: `${AUTH_URL}/signup`,
                 method: 'POST',
                 body: data
-            })
+            }),
+            transformResponse: (response) => {
+                const { jwtToken } = response;
+                if (jwtToken) {
+                    localStorage.setItem('token', jwtToken);
+                }
+                return response;
+            }
         }),
         register: builder.mutation({
             query: (data) => ({
                 url: `${AUTH_URL}/register`,
-                method: 'POST',
-                body: data
+                method: 'PATCH',
+                body: data,
+                headers: {
+                    'Authorization': getToken()
+                }
             })
         }),
         updateUser: builder.mutation({
             query: (data) => ({
                 url: `${AUTH_URL}/update`,
-                method: 'POST',
-                body: data
+                method: 'PATCH',
+                body: data,
+                headers: {
+                    'Authorization': getToken()
+                }
             })
         })
     })
