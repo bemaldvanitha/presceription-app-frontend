@@ -3,6 +3,8 @@ import { Provider } from "react-redux";
 
 import LoginScreen from "./screens/login/LoginScreen";
 import SignupScreen from "./screens/signup/SignupScreen";
+import AdminRoute from "./components/routing/AdminRoute";
+import HomeScreen from "./screens/home/HomeScreen";
 
 import store from "./store";
 
@@ -15,6 +17,9 @@ function App() {
             <Routes>
                 <Route path={'/login'} element={<LoginScreen/>}/>
                 <Route path={'/signup'} element={<SignupScreen/>}/>
+                <Route path={''} element={<AdminRoute/>}>
+                    <Route path={'/'} element={<HomeScreen/>}/>
+                </Route>
             </Routes>
         </Provider>
     </div>

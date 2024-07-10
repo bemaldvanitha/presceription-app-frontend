@@ -8,7 +8,7 @@ export const prescriptionSlice = apiSlice.injectEndpoints({
     endpoints: (builder) => ({
         addPrescription: builder.mutation({
             query: (data) => ({
-                url: PRESCRIPTION_URL,
+                url: `${PRESCRIPTION_URL}/`,
                 method: 'POST',
                 body: data,
                 headers: {
@@ -18,7 +18,7 @@ export const prescriptionSlice = apiSlice.injectEndpoints({
         }),
         getAllPrescription: builder.query({
             query: () => ({
-                url: PRESCRIPTION_URL,
+                url: `${PRESCRIPTION_URL}/`,
                 headers: {
                     'Authorization': getToken()
                 }

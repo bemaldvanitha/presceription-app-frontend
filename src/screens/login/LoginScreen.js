@@ -55,6 +55,8 @@ const LoginScreen = () => {
                 }).unwrap();
 
                 message.success(res?.message);
+
+                navigate('/');
             }catch (error){
                 message.error(error?.data?.message);
             }
@@ -66,8 +68,8 @@ const LoginScreen = () => {
         }
     }
 
-    const signupNavigateHandler = async () => {
-
+    const signupNavigateHandler =  () => {
+        navigate('/signup');
     }
 
     if(isLoading){

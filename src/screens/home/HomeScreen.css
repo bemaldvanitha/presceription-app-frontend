@@ -1,0 +1,26 @@
+.home-screen {
+    background-image: url("/src/assets/images/background/home/home-screen-background-1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home-screen-button-container {
+    display: flex;
+    margin: 10px 0;
+}
+
+.home-screen-container {
+    background: rgba(1, 71, 143, 0.4);
+    backdrop-filter: blur(10px);
+    border: 1px solid #f0f0f0;
+    border-radius: 15px;
+    padding: 15px 30px;
+    margin: 0 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 80%;
+}

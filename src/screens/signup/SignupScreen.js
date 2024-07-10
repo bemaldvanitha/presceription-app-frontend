@@ -122,6 +122,7 @@ const SignupScreen = () => {
                 }).unwrap();
 
                 message.success(res?.message);
+                navigate('/');
             }catch (error) {
                 console.log(error);
                 message.error(error?.data?.message)

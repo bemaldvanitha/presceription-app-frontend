@@ -1,0 +1,31 @@
+.prescription-table {
+    width: 90%;
+    margin: 20px;
+    border-collapse: separate;
+    border-spacing: 0 10px;
+}
+
+.prescription-table-header {
+    font-family: 'Poppins', serif;
+    font-weight: bold;
+    font-size: 28px;
+    margin: 10px 0;
+    text-align: left;
+    color: #f0f0f0;
+}
+
+.prescription-table-data {
+    font-family: 'Poppins', serif;
+    font-size: 16px;
+    padding: 15px 0;
+    color: #f0f0f0;
+}
+
+.prescription-table-row td{
+    margin: 15px 0!important;
+    cursor: pointer;
+}
+
+.prescription-table-header-row th{
+    border-bottom: 1px solid #f0f0f0;
+}
