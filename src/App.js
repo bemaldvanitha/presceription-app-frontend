@@ -7,6 +7,7 @@ import AdminRoute from "./components/routing/AdminRoute";
 import HomeScreen from "./screens/home/HomeScreen";
 import AnalysisScreen from "./screens/analysis/AnalysisScreen";
 import AddPrescriptionScreen from "./screens/add-prescription/AddPrescriptionScreen";
+import SinglePrescriptionScreen from "./screens/single-prescription/SinglePrescriptionScreen";
 
 import store from "./store";
 
@@ -23,6 +24,7 @@ function App() {
                     <Route path={'/'} element={<HomeScreen/>}/>
                     <Route path={'/analysis'} element={<AnalysisScreen/>}/>
                     <Route path={'/add-prescription'} element={<AddPrescriptionScreen/>}/>
+                    <Route path={'/prescription/:id'} element={<SinglePrescriptionScreen/>}/>
                 </Route>
             </Routes>
         </Provider>

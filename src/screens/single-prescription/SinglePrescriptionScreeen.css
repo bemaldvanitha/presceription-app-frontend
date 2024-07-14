@@ -1,0 +1,81 @@
+.single-prescription-screen {
+    background-image: url("/src/assets/images/background/single-prescription/single-prescription-background-1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.single-prescription-screen-title {
+    font-family: 'Poppins', serif;
+    font-weight: bold;
+    font-size: 34px;
+    margin: 10px 0;
+    color: #f0f0f0;
+}
+
+.single-prescription-screen-main-container {
+    padding: 20px;
+    background: rgba(108, 54, 138, 0.4);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 10px 0;
+}
+
+.single-prescription-screen-box {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-column-gap: 25px;
+    align-items: flex-start;
+}
+
+.single-prescription-screen-box-title {
+    font-family: 'Poppins', serif;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 10px 0;
+    color: #f0f0f0;
+}
+
+.single-prescription-screen-box-desc {
+    font-family: 'Poppins', serif;
+    font-size: 16px;
+    margin: 10px 0;
+    color: #f0f0f0;
+}
+
+.single-prescription-screen-sub-container {
+    padding: 20px;
+    background: rgba(0, 9, 245, 0.4);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 10px 0;
+}
+
+.single-prescription-screen-table {
+    width: 98%;
+    margin: 20px;
+    border-collapse: separate;
+    border-spacing: 0 10px;
+}
+
+.single-prescription-screen-table-header {
+    font-family: 'Poppins', serif;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 10px 0;
+    text-align: left;
+    color: #f0f0f0;
+}
+
+.single-prescription-screen-table-data {
+    font-family: 'Poppins', serif;
+    font-size: 14px;
+    padding: 15px 10px;
+    color: #f0f0f0;
+}

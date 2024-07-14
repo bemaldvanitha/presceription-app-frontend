@@ -58,7 +58,7 @@ const HomeScreen = () => {
     }
 
     const handleSinglePrescriptionClick = (id) => {
-
+        navigate(`/prescription/${id}`);
     }
 
     if(allPrescriptionIsLoading || searchedPrescriptionIsLoading || filteredPrescriptionIsLoading){
