@@ -54,7 +54,7 @@ const HomeScreen = () => {
     }
 
     const addPrescriptionNavigateHandler = () => {
-
+        navigate('/add-prescription');
     }
 
     const handleSinglePrescriptionClick = (id) => {

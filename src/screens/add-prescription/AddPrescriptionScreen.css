@@ -1,0 +1,34 @@
+.add-prescription-screen {
+    background-image: url("/src/assets/images/background/add-prescription/add-prescription-background-1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.add-prescription-screen-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(0, 237, 207, 0.4);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 800px;
+    margin: 20px 0;
+}
+
+.add-prescription-column {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-column-gap: 10px;
+    align-items: center;
+}
+
+.add-prescription-button-container {
+    margin: 10px 0;
+}
