@@ -1,0 +1,24 @@
+.analysis-filter-bar {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    width: 70%;
+}
+
+.custom-filter-input {
+    font-family: 'Poppins', serif;
+    padding: 12px;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    outline: none;
+    width: 100%;
+    margin: 0 10px;
+}
+
+.custom-analysis-filter-bar-icon {
+    font-size: 80px;
+    margin: 0 10px;
+    cursor: pointer;
+}

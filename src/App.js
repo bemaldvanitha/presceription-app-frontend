@@ -5,6 +5,7 @@ import LoginScreen from "./screens/login/LoginScreen";
 import SignupScreen from "./screens/signup/SignupScreen";
 import AdminRoute from "./components/routing/AdminRoute";
 import HomeScreen from "./screens/home/HomeScreen";
+import AnalysisScreen from "./screens/analysis/AnalysisScreen";
 
 import store from "./store";
 
@@ -19,6 +20,7 @@ function App() {
                 <Route path={'/signup'} element={<SignupScreen/>}/>
                 <Route path={''} element={<AdminRoute/>}>
                     <Route path={'/'} element={<HomeScreen/>}/>
+                    <Route path={'/analysis'} element={<AnalysisScreen/>}/>
                 </Route>
             </Routes>
         </Provider>
